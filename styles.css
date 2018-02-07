@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+.header {
+	text-align: center;
+	font-weight: 700;
+	font-size: 3em;
+	background-color: #ddf5ff;
+	color: #fff;
+}
+
+p {
+	text-align: center;
+}
+
+.wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+	flex-flow: row wrap;
+	align-content: space-around;
+	font-size: 1.5em;
+	width: 45vw;
+	margin: 50px auto;
+}
+
+.timetable {
+	width: 150px;
+	border: 1px solid #d9c9c9c9;
+	margin: 20px;
+}
+
+td{
+	border: 1px solid #c9c9c9;
+}
+
+td:nth-child(2){
+	border: 1px solid #000;
+	width: 6vh;
+}
+
+.lil{
+	font-size: 12px;
+}
+
+@media screen and (max-width: 1680px) and (max-width: 1280px){
+	.wrapper {
+		font-size: 2em;
+	}
+} 
