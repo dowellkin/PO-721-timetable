@@ -33,7 +33,7 @@ p {
 }
 
 .timetable {
-	width: 150px;
+	width: 11vw;
 	border: 1px solid #d9c9c9c9;
 	margin: 20px;
 }
@@ -44,7 +44,7 @@ td{
 
 td:nth-child(2){
 	border: 1px solid #000;
-	width: 6vh;
+	width: 24%;
 }
 
 .lil{
