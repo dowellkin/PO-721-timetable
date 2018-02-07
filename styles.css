@@ -8,12 +8,14 @@
 	text-align: center;
 	font-weight: 700;
 	font-size: 3em;
-	background-color: #ddf5ff;
+	background-color: #BBDEFB;
 	color: #fff;
 }
 
 p {
 	text-align: center;
+	font-size: 1.2em;
+	color: #81CFE0;
 }
 
 .wrapper {
@@ -29,42 +31,77 @@ p {
 	align-content: space-around;
 	font-size: 1em;
 	width: 45vw;
-	margin: 50px auto;
+	margin: 24px auto 0;
 }
 
 .timetable {
 	width: 3vw;
-	border: 1px solid #d9c9c9c9;
-	margin: 20px;
+	border: 1px solid #81CFE0;
+	margin: 10px 20px 20px;
 	min-width: 280px;
+	border-radius: 8px;
+}
+
+.weeks {
+	font-size: 0.7em;
+	line-height: 0.8em;
+	height: 34px;
+}
+
+.weeks:nth-child(2) .odd{
+	position: relative;
+	top: -10%;
+}
+
+.weeks:nth-child(2) .odd:after{
+		display: block;
+		content: "";
+		height: 1px;
+		width: 100%;
+		position: relative;
+		top: 3px;
+		left: 0;
+	background-color: #4183D7;
+}
+
+.weeks:nth-child(2) .even{
+	position: relative;
+	top: 8%;
 }
 
 td{
-	border: 1px solid #c9c9c9;
+	border: 1px solid #4183D7;
+	padding: 0 3px;
+	border-radius: 5px;
 }
 
 td:nth-child(2){
-	border: 1px solid #000;
 	width: 16%;
 	text-align: center;
 }
 
 .item{
-	margin: 0 0 40px;
+	margin: 0 0 20px;
 }
 
 .lil{
-	font-size: 12px;
+	font-size: 0.5em;
+	opacity: .5;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 600px){
+@media screen and (max-width: 1024px){
 	.wrapper {
 		font-size: 1.5em;
-		width: 90vw;
+		width: 70vw;
+		margin: 30px auto;
+	}
+	.item {
+		margin: 0 0 20px;
 	}
 	.timetable {
-		width: 25vw;
-		min-width: 390px;
+		width: 24vw;
+		min-width: 350px;
+		margin: 10px 0 20px;
 	}
 }
 
@@ -74,7 +111,7 @@ td:nth-child(2){
 		width: 70vw;
 	}
 	.timetable {
-		width: 27vw;
+		width: 270px;
 	}
 }
 
