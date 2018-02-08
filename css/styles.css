@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 320px;
+	font-size: 1em;
+	font-family: "Roboto", sans-serif;
+}
+
+.header {}
+
+.header__text {
+	text-align: center;
+	font-weight: 700;
+	font-size: 3em;
+	background-color: #BBDEFB;
+	color: #fff;
+}
+
+.schedule {
+	max-width: 620px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 24px auto 0;
+}
+
+.item {
+	flex: 1 1 300px;
+	max-width: 300px;
+	margin: 0 0 20px;
+}
+
+.timetable {
+	width: 100%;
+	table-layout: fixed;	
+	border: 1px solid #81CFE0;
+	border-radius: 2px;
+}
+
+.item p {
+	text-align: center;
+	font-size: 1.2em;
+	color: #81CFE0;
+	margin: 0 0 5px;
+}
+
+
+.weeks {
+	font-size: 0.7em;
+	line-height: 0.8em;
+	height: 34px;
+}
+
+.weeks:nth-child(2) .odd {
+	position: relative;
+	top: -10%;
+}
+
+.weeks:nth-child(2) .odd:after {
+	display: block;
+	content: "";
+	height: 1px;
+	width: 100%;
+	position: relative;
+	top: 3px;
+	left: 0;
+	background-color: #4183D7;
+}
+
+.weeks:nth-child(2) .even {
+	position: relative;
+	top: 8%;
+}
+
+td {
+	border: 1px solid #4183D7;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+td:nth-child(2) {
+	width: 16%;
+	text-align: center;
+}
+
+
+
+
+.lil {
+	font-size: 0.5em;
+	opacity: .5;
+}
